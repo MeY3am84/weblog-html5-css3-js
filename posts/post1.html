@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Future of JavaScript — mey3am.dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><span class="brand-bracket">{</span>mey3am.dev<span class="brand-bracket">}</span></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item">
+            <button id="themeToggle" class="theme-toggle-btn" title="Toggle theme" aria-label="Toggle dark/light theme">
+              <span id="themeIcon">🌙</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="post-header">
+    <div class="container">
+      <a href="../index.html" class="back-link">← Back to home</a>
+      <div class="post-meta">
+        <span class="badge tag-js">JavaScript</span>
+        <span class="post-date">Jun 2026</span>
+      </div>
+      <h1 class="post-page-title">The Future of JavaScript: What's Coming in the Next 5 Years</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="post-body reveal">
+      <p>JavaScript has gone from a scripting language for simple page interactions to the backbone of the modern web, servers, mobile apps, and even desktop software. The pace of change isn't slowing down — if anything, it's accelerating.</p>
+
+      <h2>WebAssembly is becoming a real partner, not a niche tool</h2>
+      <p>WebAssembly lets languages like Rust, C++, and Go run in the browser at near-native speed. JavaScript isn't being replaced by it — it's learning to work alongside it. Expect more apps to offload heavy computation (video editing, games, data processing) to WebAssembly modules while JavaScript handles the UI and orchestration.</p>
+
+      <h2>The line between frontend and backend keeps blurring</h2>
+      <p>Frameworks like Next.js and SvelteKit already let you write server and client code in the same file. This trend toward full-stack JavaScript is likely to deepen, with more frameworks treating "where code runs" as a deployment detail rather than a language choice.</p>
+
+<pre><code>// Example: a server action defined right next to your component
+export async function submitForm(data) {
+  "use server";
+  await db.insert(data);
+}</code></pre>
+
+      <h2>AI-assisted development becomes the default</h2>
+      <p>Writing JavaScript in 2026 increasingly means working alongside an AI assistant that suggests code, catches bugs, and explains unfamiliar APIs. This won't eliminate the need to understand JavaScript — it shifts the skill from "memorizing syntax" toward "knowing what to ask for and how to evaluate the answer."</p>
+
+      <h2>Smaller runtimes, faster startup</h2>
+      <p>Tools like Bun and Deno are pushing for faster startup times and built-in tooling (bundling, testing, TypeScript support) without extra configuration. Node.js isn't going away, but the bar for "batteries included" JavaScript tooling keeps rising.</p>
+
+      <h2>What this means for you</h2>
+      <ul>
+        <li>Core JavaScript fundamentals (closures, async patterns, the event loop) stay relevant no matter which framework wins</li>
+        <li>Learning to read and evaluate AI-generated code will matter as much as writing code from scratch</li>
+        <li>Comfort with both frontend and backend concepts will be more valuable than narrow specialization</li>
+      </ul>
+
+      <p>JavaScript's biggest strength has always been its ability to absorb new ideas without breaking the web. That's not changing — it's just moving faster.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>Built with HTML, CSS, Bootstrap &amp; JS by Mey3am</p>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" title="Back to top" aria-label="Scroll to top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
